@@ -9,12 +9,13 @@ body{
     height: 100%;
 }
 
-.container{
+.container {
     display: flex;
+    align-items: center;
     justify-content: center;
+    height: 100vh; /* utilise 100% de la hauteur de la fenêtre */
 }
 
-
-.canvas{
-    background-color: aquamarine;
+.canvas {
+    border: 1px solid #000; /* ajoutez une bordure au canvas si nécessaire */
 }

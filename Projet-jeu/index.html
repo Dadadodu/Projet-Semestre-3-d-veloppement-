@@ -8,15 +8,22 @@
     <title>Projet Licence 2</title>
 </head>
 <body>
-    <div class="container">
-        <canvas class="canvas" width="600" height="600">
-            <p>Votre navigateur ne prend pas en charge les canevas. Dommage !</p>
-        </canvas>
+
+    <div id="menu" class="menu">
+        <h1>Mon Super Jeu</h1>
+        <button onclick="startGame()">Start</button>
     </div>
 
 
+    <div id="game" class="container">
+        <canvas class="canvas" width="600" height="600">
+            <p>Votre navigateur ne prend pas en charge les canvas. Dommage !</p>
+        </canvas>
+    </div>
+
+    <script src="menu.js"></script>
     <script src="map.js"></script>
     <script src="joueur.js"></script>
-    <script src="index.js"></script>
+    <script src="MainGame.js"></script>
 </body>
 </html>

@@ -1,6 +1,7 @@
 let joueur = new Joueurs('Tao');
 const TailleBloc = 50;
 
+
 function graphisme(){
     var canvas = document.querySelector('.canvas');
     var context = canvas.getContext('2d');
@@ -24,22 +25,24 @@ function graphisme(){
     context.fillStyle = 'green';
     context.fillRect(joueur.pos[0]*TailleBloc, joueur.pos[1]*TailleBloc, 50, 50);
 }
-graphisme();
 
+function initGame() {
+graphisme();
+    
 document.addEventListener('keyup', function(event) {
     const keyCode = event.code;
     switch (keyCode) {
         case 'KeyW':
-            joueur.deplacement('Z');
+            joueur.DeplacementPrepos('Z');
             break;
         case 'KeyA':
-            joueur.deplacement('Q');
+            joueur.DeplacementPrepos('Q');
             break;
         case 'KeyS':
-            joueur.deplacement('S');
+            joueur.DeplacementPrepos('S');
             break;
         case 'KeyD':
-            joueur.deplacement('D');
+            joueur.DeplacementPrepos('D');
             break;
         default:
             break;
@@ -52,10 +55,10 @@ document.addEventListener('keyup', function(event) {
         joueur.prepos[0] = joueur.pos[0];
         joueur.prepos[1] = joueur.pos[1];
     }
-
     graphisme();
 });
 
+}
 
-// console.log("ceci est prepos "+joueur.prepos[0] +" "+joueur.prepos[1]);
-// console.log("ceci est pos "+joueur.pos[0] +" "+joueur.pos[1]);
+
+

@@ -11,6 +11,8 @@ function graphisme(){
     image_stone.src="stone.png";
     var image_end = new Image();
     image_end.src="Door.png";
+    var image_perso = new Image();
+    image_perso.src="pig.png";
 
     // Clear the canvas before drawing
     context.clearRect(0, 0, canvas.width, canvas.height);
@@ -32,8 +34,9 @@ function graphisme(){
             }
         }
     }
-    context.fillStyle = 'green';
-    context.fillRect(joueur.pos[0]*TailleBloc, joueur.pos[1]*TailleBloc, 50, 50);
+    //context.fillStyle = 'green';
+    context.drawImage(image_perso,joueur.pos[0]*TailleBloc, joueur.pos[1]*TailleBloc);
+    //context.fillRect(joueur.pos[0]*TailleBloc, joueur.pos[1]*TailleBloc, 50, 50);
 }
 
 function initGame() {

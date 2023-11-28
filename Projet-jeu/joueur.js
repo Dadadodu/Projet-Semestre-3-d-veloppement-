@@ -47,8 +47,11 @@ class Joueurs {
     };
 
     verif() {
+        if(map[joueur.MapX][joueur.MapY][joueur.prepos[1]][joueur.prepos[0]]==2){//map[id map][y][x]
+            console.log("tu as gagner");
+            finishGame();
+        }
         if(map[joueur.MapX][joueur.MapY][joueur.prepos[1]][joueur.prepos[0]]==1){//map[id map][y][x]
-            console.log("test");
             return 0;
         }
         return 1;

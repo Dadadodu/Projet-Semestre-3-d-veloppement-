@@ -2,20 +2,34 @@ html{
     height: 100%;
 }
 
-
-body{
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow-x: hidden;
     overflow-y: hidden;
-    height: 100%;
 }
 
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* utilise 100% de la hauteur de la fenêtre */
+    height: 100vh; 
 }
 
 .canvas {
-    border: 1px solid #000; /* ajoutez une bordure au canvas si nécessaire */
+    border: 1px solid #000; 
+    display: block;
+}
+
+.menu {
+    text-align: center;
+}
+
+#finish{
+    border: 0;
+    padding: 0;
+    background-color: black
 }

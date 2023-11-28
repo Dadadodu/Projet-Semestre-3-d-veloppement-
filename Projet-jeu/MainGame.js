@@ -17,7 +17,7 @@ function graphisme(){
                 context.fillRect(j*TailleBloc, i*TailleBloc, 50, 50);
             }
             if(map[joueur.MapX][joueur.MapY][i][j]==2){
-                context.fillStyle = 'blue';
+                context.fillStyle = 'grass.png';
                 context.fillRect(j*TailleBloc, i*TailleBloc, 50, 50);
             }
         }

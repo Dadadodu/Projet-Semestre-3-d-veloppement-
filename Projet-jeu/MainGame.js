@@ -28,7 +28,7 @@ function graphisme(){
 
 function initGame() {
 graphisme();
-    
+
 document.addEventListener('keyup', function(event) {
     const keyCode = event.code;
     switch (keyCode) {
@@ -47,7 +47,7 @@ document.addEventListener('keyup', function(event) {
         default:
             break;
     }
-    console.log("ceci est prepos "+joueur.prepos[0] +" "+joueur.prepos[1]);
+    
     if(joueur.verif()){
         joueur.pos[0] = joueur.prepos[0];
         joueur.pos[1] = joueur.prepos[1];

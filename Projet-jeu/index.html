@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="text.css">
+    <link rel="stylesheet" href="bouton.css">
+    <link rel="stylesheet" href="firework.css">
     <title>Projet Licence 2</title>
 </head>
 <body>
 
-    <div id="menu" class="menu">
-        <h1>Mon Super Jeu</h1>
-        <button onclick="startGame()">Start</button>
-    </div>
-
+    <button id="menu" class='glowing-btn' onclick="startGame()">
+        <span class='glowing-txt'>Star<span class='faulty-letter'>t </span>Game</span>
+    </button>
 
     <div id="game" class="container">
         <canvas class="canvas" width="600" height="600">
@@ -21,6 +22,15 @@
         </canvas>
     </div>
 
+    <button id="finish">
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <h2>Tu as vaincu le labyrinthe Bravo</h2>
+    </button>
+
+
+        
     <script src="menu.js"></script>
     <script src="map.js"></script>
     <script src="joueur.js"></script>

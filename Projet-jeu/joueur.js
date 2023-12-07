@@ -2,8 +2,8 @@ class Joueurs {
 
     constructor(firstname){
         this.firstname = firstname;
-        this.pos = [1,1];//[x][y]
-        this.prepos = [1,1];//[x][y]
+        this.pos = [2,2];//[x][y]
+        this.prepos = [2,2];//[x][y]
         this.change = 0 //1nord 2sud 3ouest 4est
         this.MapX = 0;
         this.MapY = 0;

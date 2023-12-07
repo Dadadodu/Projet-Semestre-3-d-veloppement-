@@ -7,19 +7,16 @@ function startGame() {
     document.getElementById("menu").style.display = "none";
     
     // Afficher le jeu
-    document.getElementById("game").style.display = "block";
+    document.querySelector("#game").style.display = "flex";
 
     // Lancer la fonction d'initialisation du jeu
     initGame();
 }
 
 function finishGame() {
-    // Masquer le menu
+    // Affiche la fin
     document.getElementById("finish").style.display = "block";
     
-    // Afficher le jeu
-    document.getElementById("game").style.display = "none";
-
-    // Lancer la fonction d'initialisation du jeu
-    initGame();
+    // Masquer le jeu
+    ddocument.querySelector("#game").style.display = "none";
 }
